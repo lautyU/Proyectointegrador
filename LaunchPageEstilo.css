@@ -1,0 +1,176 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Barra {
+    
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+       
+        background-color:rgba(0, 0, 0, 0.3)
+
+    }
+
+.sectionmain{
+    display: flex;
+}
+#busq{
+    width: 150px;
+    align-items: center;
+    padding: 4px;
+}
+.mover{
+    display: flex;
+    padding-left: 50%;
+    align-items:center;
+    position: flex;
+}
+.barra:hover{
+    background-color: lightgray;
+}
+#sidebar.active{
+left: 0;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: black;
+    left: -200px;
+    transition: all 500ms linear ;
+    z-index: 1;
+    
+}
+#sidebar ul li {
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 1.3);
+    
+}
+ #sidebar #Toggle{
+     position: absolute;
+     left: 230px;
+     top: 20px;
+     cursor: pointer;
+
+ }
+ #Toggle{
+     margin-left: -2rem;
+     margin-top:-1.26rem;
+
+ }
+ #sidebar #Toggle span{
+     display: block;
+     width:40px ;
+     text-align: center;
+     font-size: 30px;
+     border: 1px solid black;
+     color:rgb(245, 243, 243);
+     background-color:rgba(224, 5, 213, 0.774);
+
+ }
+ a{
+     color: white
+ }
+
+footer{
+    width: 100%;
+    background: #202020;
+    color:white;
+    padding:40px;
+}
+.contariner-footer-all{
+width: 100%;
+max-width: 1600px;
+margin:auto;
+
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+.colum1{
+    max-width:400px;
+
+}
+.colum1 h1{
+    font-size: 24px;
+}
+.colum1 p{
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+.colum2 {
+    max-width: 400px;
+
+}
+.colum2 h1{
+    font-size: 22px;
+}
+.row{
+   
+    margin-top:20px ;
+    display:flex;
+}
+.row img{
+    width: 36px;
+    height: 36px;
+    
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.colum3 {
+    max-width: 400px;
+
+}
+.colum3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+}
+.row2 label{
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 50px;
+}
+.container-footer{
+    width: 100%;
+    background:  black;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.copyright{
+    color: #c7c7c7;
+}
+
+
+.copyright a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #c7c7c7;
+}
+.terminos a{
+    text-decoration: none;
+    color: white;
+
+}
+@media screen and(max-width:1100px){
+  .container-body{
+      flex-wrap: wrap;
+  }  
+  .colum2,.colum3{
+      margin-top: 40px;
+  }
+}
